@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rawcast - Support</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #0a0a0a;
+      color: #cccccc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+    .container { max-width: 640px; width: 100%; }
+    a { color: #33ff33; }
+    a:hover { color: #66ff66; }
+    .back { font-size: 0.8em; margin-bottom: 32px; display: inline-block; text-decoration: none; }
+    .back::before { content: '< '; }
+    h1 { color: #33ff33; font-size: 1.3em; margin-bottom: 6px; }
+    .subtitle { color: #555; font-size: 0.75em; margin-bottom: 32px; }
+    h2 { color: #33ff33; font-size: 0.95em; margin-top: 28px; margin-bottom: 10px; }
+    p, li { font-size: 0.8em; line-height: 1.7; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 8px; }
+    li::marker { color: #1a9a1a; }
+    .contact-box {
+      border: 1px solid #1a3a1a;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .contact-box p { margin-bottom: 8px; }
+    code {
+      background: #111;
+      padding: 2px 6px;
+      font-size: 1em;
+      color: #33ff33;
+    }
+    .faq-q { color: #33ff33; font-size: 0.85em; margin-top: 20px; margin-bottom: 6px; }
+    .faq-a { font-size: 0.8em; line-height: 1.7; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back">rawcast.app</a>
+    <h1>Support</h1>
+    <p class="subtitle">rawcast — Terminal Weather for iOS</p>
+
+    <div class="contact-box">
+      <p style="color: #33ff33; font-size: 0.85em; margin-bottom: 12px;">Contact</p>
+      <p>Email: <a href="mailto:juergen+rawcast@klaassen.consulting">juergen+rawcast@klaassen.consulting</a></p>
+      <p style="color: #555; font-size: 0.75em;">We typically respond within 24 hours.</p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p class="faq-q">> Where does the weather data come from?</p>
+    <p class="faq-a">rawcast uses Apple WeatherKit exclusively. All forecasts, conditions, and alerts come directly from Apple's weather service.</p>
+
+    <p class="faq-q">> Why does the app need my location?</p>
+    <p class="faq-a">Location access is optional. It allows rawcast to show weather for where you are right now. You can deny location permission and manually add cities instead using the <code>+</code> button.</p>
+
+    <p class="faq-q">> How do I switch themes?</p>
+    <p class="faq-a">Tap the gear icon in the top-right to open Settings, or type <code>:theme</code> in the command bar at the bottom of the screen. There are 7 themes to choose from.</p>
+
+    <p class="faq-q">> How do I use the command bar?</p>
+    <p class="faq-a">Tap the command bar at the bottom and type a command. Try <code>:help</code> to see all available commands. You can switch views, themes, add locations, and adjust settings — all from the keyboard.</p>
+
+    <p class="faq-q">> How do I switch between Fahrenheit and Celsius?</p>
+    <p class="faq-a">Open Settings (gear icon) and toggle between Imperial and Metric under Units.</p>
+
+    <p class="faq-q">> The radar shows "SIM" instead of "LIVE"</p>
+    <p class="faq-a">Live NEXRAD radar data is available for US locations only. For locations outside the US, rawcast displays a simulated radar visualization based on current weather conditions.</p>
+
+    <p class="faq-q">> How do widgets get updated?</p>
+    <p class="faq-a">Widgets update when you open the app and periodically in the background. Enable Background Refresh in Settings for the freshest widget data.</p>
+
+    <p class="faq-q">> Can I get weather alert notifications?</p>
+    <p class="faq-a">Yes. Enable Background Refresh in Settings and allow notifications when prompted. You'll receive alerts for severe weather in your saved locations.</p>
+
+    <h2>System Requirements</h2>
+    <p>iPhone running iOS 17.0 or later.</p>
+  </div>
+</body>
+</html>

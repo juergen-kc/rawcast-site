@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rawcast - Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #0a0a0a;
+      color: #cccccc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+    .container { max-width: 640px; width: 100%; }
+    a { color: #33ff33; }
+    a:hover { color: #66ff66; }
+    .back { font-size: 0.8em; margin-bottom: 32px; display: inline-block; text-decoration: none; }
+    .back::before { content: '< '; }
+    h1 { color: #33ff33; font-size: 1.3em; margin-bottom: 6px; }
+    .updated { color: #555; font-size: 0.75em; margin-bottom: 32px; }
+    h2 { color: #33ff33; font-size: 0.95em; margin-top: 28px; margin-bottom: 10px; }
+    p, li { font-size: 0.8em; line-height: 1.7; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 4px; }
+    li::marker { color: #1a9a1a; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back">rawcast.app</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 8, 2026</p>
+
+    <h2>Overview</h2>
+    <p>rawcast is a weather app that respects your privacy. We collect no personal data, use no third-party analytics, and display no ads.</p>
+
+    <h2>Weather Data</h2>
+    <p>rawcast uses Apple WeatherKit to fetch weather information. Weather requests are made directly to Apple's servers through the WeatherKit framework. Apple's privacy policy governs how Apple handles these requests. rawcast does not operate any intermediary server.</p>
+
+    <h2>Radar Data</h2>
+    <p>For the radar feature, rawcast fetches publicly available NEXRAD precipitation tiles from the Iowa State University Mesonet service. These requests contain only geographic coordinates and do not include any personal information.</p>
+
+    <h2>Location Data</h2>
+    <p>rawcast requests your location only when you grant permission, and only to display weather for your current position. Location data is:</p>
+    <ul>
+      <li>Processed entirely on your device</li>
+      <li>Never transmitted to any server operated by rawcast</li>
+      <li>Never shared with third parties</li>
+      <li>Used solely to request weather data from Apple WeatherKit</li>
+    </ul>
+    <p>You may use rawcast without granting location access by manually adding cities.</p>
+
+    <h2>Saved Locations</h2>
+    <p>City names and coordinates you save are stored locally on your device using SwiftData. This data is not transmitted off your device except as coordinates in WeatherKit weather requests to Apple.</p>
+
+    <h2>Analytics and Tracking</h2>
+    <p>rawcast does not include any analytics frameworks, tracking pixels, or advertising SDKs. We do not collect usage data, crash reports beyond what Apple provides through standard App Store mechanisms, or any form of telemetry.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>rawcast communicates with two external services:</p>
+    <ul>
+      <li>Apple WeatherKit — weather data</li>
+      <li>Iowa State University Mesonet — radar tile imagery (US only)</li>
+    </ul>
+    <p>No other third-party services are used.</p>
+
+    <h2>Data Retention</h2>
+    <p>All app data (saved locations, cached weather, preferences) is stored locally on your device. Deleting the app removes all associated data.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>rawcast does not knowingly collect any personal information from children or any other users.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we update this privacy policy, the revised version will be posted at this URL with an updated date.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy-related questions, contact us at <a href="mailto:juergen+rawcast@klaassen.consulting">juergen+rawcast@klaassen.consulting</a>.</p>
+  </div>
+</body>
+</html>
